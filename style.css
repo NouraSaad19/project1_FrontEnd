@@ -1,0 +1,81 @@
+
+
+.navs ul li a{
+    color:white;
+    font-size:25px;
+
+}
+
+
+.continer{
+    background-color:  rgba(5, 5, 5, 0.934);
+    position: relative;
+    overflow: hidden;
+
+
+}
+.content {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: auto;
+    overflow: hidden;
+
+}
+
+.text{
+    width: 50%;
+    padding:5%;
+    color: aliceblue;
+}
+
+.text h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.text p{
+    font-size: 18px;
+    margin: 20px;
+}
+
+.text a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.content .image{
+    width: 25%;
+}
+
+.icons{
+    position: absolute;
+    bottom: 130px;
+    left: 40%;
+    
+    
+    
+}
+.icons img{
+    width: 50px;
+}
+
+.icons img:hover{
+    transform: scale(1.5);
+    
+    cursor: pointer;
+}
+
+.footers footer ul li a{
+    color: white;
+}
+
+#slideshow{
+    display: block;
+    width: 100%;
+    height: 700px;
+}
