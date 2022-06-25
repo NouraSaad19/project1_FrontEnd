@@ -46,6 +46,50 @@ function slideshow(){
     }
     setTimeout(function(){
         slideshow();
-    },5000)
+    },3000)
 }
 slideshow()
+
+
+
+
+// register function
+
+function register(e){
+    event.preventDefault();
+    let username = document.getElementById('username').value;
+    let email = document.getElementById('email').value;
+    let pass = document.getElementById('password').value;
+
+    let user = {
+        username : username ,
+        email : email ,
+        password : pass ,
+    };
+
+    let json = JSON.stringify(user);
+    localStorage.setItem(username,json);
+    console.log('user added');
+
+
+
+}
+
+
+function login(e){
+    let username = document.getElementById('username').value;
+    let pass = document.getElementById('password').value;
+    
+
+    let user = localStorage.getItem(username);
+    let data = JSON.parse(user);
+    
+    if (user == null){
+        alert('invalid')
+    } else if (username == data.username && pass == data.password){
+        alert('logged in')
+    }else{
+        alert('wrong password')
+    }
+    
+}

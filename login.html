@@ -7,12 +7,12 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
-  <body>
+  <body class="text-center" >
     
     <div class="navs">
     <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="35px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,7 +34,68 @@
       </div>
     </nav>
     </div>
-   
+    
+
+      <br><br><br>
+      <main class="form-signin w-100 m-auto" >
+        <form style="width:50% ;  display: inline-block; " onsubmit="login()">
+        <img class="mb-4" src="http://cdn.onlinewebfonts.com/svg/img_337531.png" style="background-color:white;" alt="" width="80" height="80">
+          <h1 class="h3 mb-3 fw-normal">Please login</h1>
+      
+          <div class="form-floating">
+            <input type="text" class="form-control" id="username" placeholder="text" name="name">
+            <label for="floatingInput">username</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="password" placeholder="text" name="password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <br>
+          <button class="w-100 btn btn-lg " style="background-color:rgb(155, 155, 155);"type="submit">Login</button>
+          <br><br>
+          <p>New user? <a href="register.html">create an account</a></p>
+          
+        </form>
+      </main>
+      
+
+      
+   <!--
+    <script>
+      user.onsubmit = function (e){
+
+         localStorage.setItem('name', user.name.value);
+         localStorage.setItem('password', user.password.value);
+
+         let name = localStorage.getItem('name')
+         
+         if (name=='noura'){
+          alert("you login...")
+         }
+         else{
+          alert("you can't login")
+         }
+
+        
+      } 
+
+
+      
+      /*
+      localStorage.setItem('name','noura')
+      console.log(localStorage.getItem('name')) */
+      /*
+      console.log(localStorage.length) //return length of the localstorge
+      console.log(localStorage.key(0)) //return name of the key
+      */
+      /*
+      // remove item from localstorge..
+      // localStorage.removeItem('name' , 'noura')
+      // localStorage.clear();
+      */
+      
+    </script>
+    -->
     
 
         <footer class="py-3 my-4">
@@ -61,7 +122,7 @@
 
      
     
-    <script src="index.js"></script>
+        <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
